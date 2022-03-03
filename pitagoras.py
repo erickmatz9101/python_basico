@@ -51,7 +51,7 @@ def menu():
 
      elif opcion ==3:
           print("Vamos a calcular el lado de C, para ello necesitamos los valores de a y b ")
-          A= float(input("Ingresa el valor de A "))
+          A = float(input("Ingresa el valor de A "))
           B = float(input("Ingresa el valor de B "))
           calculo_hipotenusa(A,B)
 
