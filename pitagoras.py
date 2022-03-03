@@ -31,30 +31,42 @@ def calculo_hipotenusa(valor1, valor2):
      raiz = round(raiz,2)
      print("El valor de la hipotenusa es de: " + str(raiz))
 
+def menu():
+
+     print("Bienvenido al programa para calcular el teoréma de pitágoras 🏛️🌍\n")
+
+     opcion = int(input("Menú:\n Selecciona 1: Para calcular el lado A\n Selecciona 2: Para calcular el lado B\n Selecciona 3: Para calcular el lado C "))
+
+     if opcion == 1:
+          print("Vamos a calcular el lado de A, para ello necesitamos los valores de C y B\n")
+          C =float(input("Ingresa el valor de C "))
+          B =float(input("Ingresa el valor de B "))
+          calculo_catetos(C, B)
+
+     elif opcion ==2:
+          print("Vamos a calcular el lado de B, para ello necesitamos los valores de C y A\n")
+          C =float(input("Ingresa el valor de C "))
+          A =float(input("Ingresa el valor de B "))
+          calculo_catetos(C, A)
+
+     elif opcion ==3:
+          print("Vamos a calcular el lado de C, para ello necesitamos los valores de a y b ")
+          A= float(input("Ingresa el valor de A "))
+          B = float(input("Ingresa el valor de B "))
+          calculo_hipotenusa(A,B)
+
+     else:
+          print("Haz elegido una opción no valida, intentalo de nuevo \n")
+          menu()
+          
 
 
-print("Bienvenido al programa para calcular el teoréma de pitágoras 🏛️🌍\n")
 
-opcion = int(input("Menú:\n Selecciona 1: Para calcular el lado A\n Selecciona 2: Para calcular el lado B\n Selecciona 3: Para calcular el lado C "))
+if __name__ == '__main__':
 
-if opcion == 1:
-    print("Vamos a calcular el lado de A, para ello necesitamos los valores de C y B\n")
-    C =float(input("Ingresa el valor de C "))
-    B =float(input("Ingresa el valor de B "))
-    calculo_catetos(C, B)
-
-elif opcion ==2:
-     print("Vamos a calcular el lado de B, para ello necesitamos los valores de C y A\n")
-     C =float(input("Ingresa el valor de C "))
-     A =float(input("Ingresa el valor de B "))
-     calculo_catetos(C, A)
-
-elif opcion ==3:
-     print("Vamos a calcular el lado de C, para ello necesitamos los valores de a y b ")
-     A= float(input("Ingresa el valor de A "))
-     B = float(input("Ingresa el valor de B "))
-     calculo_hipotenusa(A,B)
+     menu()
      
+
 
 
 

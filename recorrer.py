@@ -27,3 +27,4 @@ if __name__  == '__main__':
 """Éste programa gebera un ciclo que recorre caracter por caracter hasta el final.
 la variable LETRA representa a las repeticiones en cada vuelta del ciclo for
 Ciclo For: representa que para las letras en el nombre vamos a imprimir cada letra en cada vuelta del ciclo """    
+
